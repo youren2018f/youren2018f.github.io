@@ -1664,3 +1664,11 @@ code {
 #header-post #actions {
   direction: ltr !important;
 }
+blockquote {
+  color: #363533 !important;
+  border-left: 0.25rem solid #666 !important;
+}
+blockquote:before {
+  color: #363533 !important;
+  content: "\201C";
+}
