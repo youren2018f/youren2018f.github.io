@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="這次要推薦的是瀏覽器擴充元件：Vimium 在google 搜尋 Vimium，然後安裝擴充元件就可以了。 我在寫這篇文時，也才接觸 Vimium 三天。 介紹頁面上寫著  The Hacker’s Browser. Vimium provides keyboard shortcuts for navigation and control in the spirit of Vim.  我覺得它就是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="讓你的瀏覽器飛起來 Vimium">
+<meta property="og:url" content="https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/index.html">
+<meta property="og:site_name" content="隨性人生 Go-with-the-flow Living">
+<meta property="og:description" content="這次要推薦的是瀏覽器擴充元件：Vimium 在google 搜尋 Vimium，然後安裝擴充元件就可以了。 我在寫這篇文時，也才接觸 Vimium 三天。 介紹頁面上寫著  The Hacker’s Browser. Vimium provides keyboard shortcuts for navigation and control in the spirit of Vim.  我覺得它就是">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-01-20T08:05:14.000Z">
+<meta property="article:modified_time" content="2026-01-20T08:05:54.519Z">
+<meta property="article:author" content="youren">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>讓你的瀏覽器飛起來 Vimium</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2026/01/16/%E8%BD%89%E5%8C%96%E5%88%A5%E4%BA%BA%E7%9A%84%E6%8E%A8%E6%8A%97%E5%BF%83%E5%BE%97/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&text=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&title=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&is_video=false&description=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=讓你的瀏覽器飛起來 Vimium&body=Check out this article: https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&title=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&title=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&title=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&title=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&name=讓你的瀏覽器飛起來 Vimium&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&t=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B0%A1%E5%96%AE%E7%9A%84%E6%95%99%E5%AD%B8"><span class="toc-number">1.</span> <span class="toc-text">簡單的教學</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        讓你的瀏覽器飛起來 Vimium
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">youren</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2026-01-20T08:05:14.000Z" class="dt-published" itemprop="datePublished">2026-01-20</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>這次要推薦的是瀏覽器擴充元件：<a target="_blank" rel="noopener" href="https://vimium.github.io/">Vimium</a></p>
+<p>在google 搜尋 Vimium，然後安裝擴充元件就可以了。</p>
+<p>我在寫這篇文時，也才接觸 Vimium 三天。</p>
+<p>介紹頁面上寫著</p>
+<blockquote>
+<p>The Hacker’s Browser. Vimium provides keyboard shortcuts for navigation and control in the spirit of Vim.</p>
+</blockquote>
+<p>我覺得它就是一個利用鍵盤來取代平常在瀏覽網頁時滑鼠的功用。</p>
+<p>讓你在逛網頁時，更快、更方便，能夠更快速的開起新分頁、關閉分頁、進入超連結、開啟新連結及複製網址連結等。</p>
+<p>這一些動作都會需要用到鍵盤，所以先決條件就是要先熟悉鍵盤，才能夠讓這個工具發揮效用。</p>
+<p>由於之前在學習嘸蝦米的時候，就有把英打的速度練起來了，所以這有點算是技能疊加的概成。</p>
+<p>一般的滑鼠只有左鍵、右鍵，還有滾輪，但是鍵盤光英文字母就26個鍵，這樣一比就知道兩者的差距了。想像一下，在打字的時候用螢幕上的小鍵盤，透過滑鼠來輸入文字，還是用鍵盤打字比較快，或許就會有一點概念了。</p>
+<p>而且用滑鼠點擊連結時，常常要先將鼠標移到指定的區域範圍內再點擊，雖然你可能會覺得用滑鼠也很快啊，但是如果你試試看用非慣用手來操作，速度會直接下降。</p>
+<p>Vimium 的學習曲線也不會很陡，如果之前是用 Vim 在編輯文字的話就可以馬上上手了。</p>
+<p>對於一般人而言，只要記住幾個常用的按鍵就可以了。</p>
+<p>在使用 Vimium 時，英文大小寫是有差別的。</p>
+<h2 id="簡單的教學"><a href="#簡單的教學" class="headerlink" title="簡單的教學"></a>簡單的教學</h2><p>要學習最正確的使用方法，當然就看<a target="_blank" rel="noopener" href="https://vimium.github.io/">原始的文件說明</a>。</p>
+<p>學習的方法就是當你覺得用滑鼠覺得不順時，就去看看文件中要如何用按鍵取代這個動作，或者直接問 AI。</p>
+<p>下面就列出我覺得常用的：</p>
+<p>f：在網頁時，按下小寫的f，所有你可以用滑鼠點擊的連結就會在該連結出現英文字母，有時候是一 個，有時候是2個，例如在[最新消息]連結旁出現了英文D，你輸入D，就會在新分頁開起那個連結，如果輸入d的話，就是在目前分頁開起[最新消息]的超連結。</p>
+<p>也就是說如果要在網頁進入超連結的話，從原本的滑鼠移到該連結點下，變成了輸入2個英文字母。</p>
+<p>gi：移到網頁中第一個可以輸入文字的地方。注意：輸入模式下，按英文字母就等於你輸入英文字，沒有其他的功用。</p>
+<p>j：相當於滑鼠滾輪的向下滾動1次。</p>
+<p>k：相當於滑鼠滾輪的向上滾動1次。</p>
+<p>H：相當於滑鼠按下”上一頁”</p>
+<p>L：相當於滑鼠按下”下一頁”</p>
+<p>x：關閉目前的頁面</p>
+<p>X：開啟關閉的頁面，例如剛才用 x 關掉的頁面，再按下X 就可以重新開啟。</p>
+<p>J：到目前分頁左邊的分頁</p>
+<p>K：到目前分頁右邊的分頁</p>
+<p>yy：複製目前網頁的網址</p>
+<p>其實還有許多實用的功能，但是本篇文章主要是在介紹這個擴充元件，所以就不多提了。</p>
+<p>使用 Vimium 會需要用到大小寫的英文，我都是預設使用英文小寫，然後要用大寫時再用 SHIFT + 小寫英文。但是在用嘸蝦米輸入法時，會有設定使用 shift 切換 中文&#x2F;英文輸入法，所以我目前就是把這個取消。中文跟英文的切換使用 ctrl + 空白鍵。</p>
+<p>另外我其實在其他人的 blog 中，也有看到人推薦 Vimium ，但是那時並沒有特別的興趣，因為我覺得用滑鼠瀏覽網頁也滿迅速方便的，但是我看到一篇文章的標題是：<a target="_blank" rel="noopener" href="https://www.opasschang.com/blog/life-is-short-use-keyboard-more">人生苦短，多用鍵盤，少用滑鼠</a></p>
+<p>我就有興趣了。而且一直用鍵盤逛網頁也滿酷的。</p>
+<p>這有一點像我之學沒有學嘸蝦米，也覺得用注音輸入法也還行，但是學過嘸蝦米之後，打字的速度還有準確度就提升了。</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B0%A1%E5%96%AE%E7%9A%84%E6%95%99%E5%AD%B8"><span class="toc-number">1.</span> <span class="toc-text">簡單的教學</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&text=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&title=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&is_video=false&description=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=讓你的瀏覽器飛起來 Vimium&body=Check out this article: https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&title=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&title=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&title=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&title=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&name=讓你的瀏覽器飛起來 Vimium&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://youren2018f.github.io/2026/01/20/%E8%AE%93%E4%BD%A0%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8%E9%A3%9B%E8%B5%B7%E4%BE%86-Vimium/&t=讓你的瀏覽器飛起來 Vimium"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2026
+    youren
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
